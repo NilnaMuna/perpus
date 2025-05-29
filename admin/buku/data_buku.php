@@ -2,13 +2,6 @@
 	<h1 style="text-align:center;">
 		Data Buku
 	</h1>
-	<ol class="breadcrumb">
-		<li>
-			<a href="index.php">
-				<i class="fa fa-home"></i>
-			</a>
-		</li>
-	</ol>
 </section>
 <!-- Main content -->
 <section class="content">

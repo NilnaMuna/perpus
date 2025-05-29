@@ -27,17 +27,8 @@ if (strlen($tambah) == 1) {
 
 <section class="content-header">
 	<h1>
-		Master Data
-		<small>Data anggota</small>
+		Data anggota
 	</h1>
-	<ol class="breadcrumb">
-		<li>
-			<a href="index.php">
-				<i class="fa fa-home"></i>
-				<b>Si Perpustakaan</b>
-			</a>
-		</li>
-	</ol>
 </section>
 
 <section class="content">
@@ -60,29 +51,24 @@ if (strlen($tambah) == 1) {
 
 						<div class="form-group">
 							<label>NIS</label>
-							<input type="number" name="nis" id="nis" class="form-control" placeholder="NIS">
+							<input type="tel" name="nis" id="nis" class="form-control" placeholder="NIS">
 						</div>
 
 						<div class="form-group">
 							<label>Nama Anggota</label>
 							<input type="text" name="nama" id="nama" class="form-control" placeholder="Nama Anggota">
 						</div>
-						
+
 						<div class="form-group">
 							<label>Kelas</label>
-							<!-- <input type="text" name="kelas" id="kelas" class="form-control" placeholder="Kelas"> -->
-							<select name="kelas" id="kelas" class="form-control" required>
-								<option>-- Pilih --</option>
-								<option>10</option>
-								<option>11</option>
-								<option>12</option>
-							</select>
+							<input type="text" name="kelas" id="kelas" class="form-control" placeholder="Kelas">
 						</div>
 
 						<div class="form-group">
 							<label>No HP</label>
-							<input type="number" name="no_hp" id="no_hp" class="form-control" placeholder="No HP">
+							<input type="tel" name="no_hp" id="no_hp" class="form-control" placeholder="No HP">
 						</div>
+
 
 					</div>
 					<!-- /.box-body -->
@@ -100,10 +86,10 @@ if (strlen($tambah) == 1) {
 
     if (isset ($_POST['Simpan'])){
     
-        $sql_simpan = "INSERT INTO tb_anggota (id_anggota,nama,jekel,kelas,no_hp) VALUES (
-           '".$_POST['id_anggota']."',
+        $sql_simpan = "INSERT INTO tb_anggota (id_anggota,nis,nama,kelas,no_hp) VALUES (
+		  '".$_POST['id_anggota']."',
+		  '".$_POST['nis']."',
           '".$_POST['nama']."',
-          '".$_POST['jekel']."',
           '".$_POST['kelas']."',
           '".$_POST['no_hp']."')";
         $query_simpan = mysqli_query($koneksi, $sql_simpan);

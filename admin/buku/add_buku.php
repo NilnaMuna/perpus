@@ -64,7 +64,7 @@ if (strlen($tambah) == 1) {
 
 						<div class="form-group">
 							<label>Tahun Terbit</label>
-							<input type="number" name="th_terbit" id="th_terbit" class="form-control" placeholder="Tahun Terbit">
+							<input type="tel" name="th_terbit" id="th_terbit" class="form-control" placeholder="Tahun Terbit">
 						</div>
 
 						<div class="form-group">

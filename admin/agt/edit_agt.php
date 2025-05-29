@@ -12,14 +12,6 @@
 	<h1>
 		Data Anggota
 	</h1>
-	<ol class="breadcrumb">
-		<li>
-			<a href="index.php">
-				<i class="fa fa-home"></i>
-				<b>Si Perpustakaan</b>
-			</a>
-		</li>
-	</ol>
 </section>
 
 <section class="content">
@@ -42,14 +34,14 @@
 						</div>
 
 						<div class="form-group">
-							<label>Nama</label>
-							<input type='text' class="form-control" name="nama" value="<?php echo $data_cek['nama']; ?>"
-							/>
+							<label>NIS</label>
+							<input type="tel"class="form-control" name="nis" value="<?php echo $data_cek['nis']; ?>">
 						</div>
 
 						<div class="form-group">
-							<label>NIS</label>
-							<input type="number"class="form-control" name="nis" value="<?php echo $data_cek['nis']; ?>">
+							<label>Nama</label>
+							<input type='text' class="form-control" name="nama" value="<?php echo $data_cek['nama']; ?>"
+							/>
 						</div>
 
 						<div class="form-group">
@@ -60,7 +52,7 @@
 
 						<div class="form-group">
 							<label>No HP</label>
-							<input type='number' class="form-control" name="no_hp" value="<?php echo $data_cek['no_hp']; ?>"
+							<input type='tel' class="form-control" name="no_hp" value="<?php echo $data_cek['no_hp']; ?>"
 							/>
 						</div>
 

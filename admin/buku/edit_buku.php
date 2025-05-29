@@ -8,17 +8,6 @@
 ?>
 
 <section class="content-header">
-	<h1>
-		Data Buku
-	</h1>
-	<ol class="breadcrumb">
-		<li>
-			<a href="index.php">
-				<i class="fa fa-home"></i>
-				<b>Si Perpustakaan</b>
-			</a>
-		</li>
-	</ol>
 </section>
 
 <section class="content">
@@ -42,33 +31,29 @@
 
 						<div class="form-group">
 							<label>Judul Buku</label>
-							<input type="text" name="judul_buku" id="judul_buku" class="form-control" placeholder="Judul Buku">
+							<input type='text' class="form-control" name="judul_buku" value="<?php echo $data_cek['judul_buku']; ?>" />
 						</div>
-
+						
 						<div class="form-group">
 							<label>Jenis Buku</label>
-							<input type="text" name="jenis_buku" id="jenis_buku" class="form-control" placeholder="Jenis Buku">
+							<input type='text' class="form-control" name="jenis_buku" value="<?php echo $data_cek['jenis_buku']; ?>" />
 						</div>
-
+						
 						<div class="form-group">
 							<label>Pengarang</label>
-							<input type="text" name="pengarang" id="pengarang" class="form-control" placeholder="Nama Pengarang">
+							<input type='text' class="form-control" name="pengarang" value="<?php echo $data_cek['pengarang']; ?>" />
 						</div>
-
+						
 						<div class="form-group">
 							<label>Penerbit</label>
-							<input type="text" name="penerbit" id="penerbit" class="form-control" placeholder="Penerbit">
+							<input type='text' class="form-control" name="penerbit" value="<?php echo $data_cek['penerbit']; ?>" />
 						</div>
-
+						
 						<div class="form-group">
 							<label>Tahun Terbit</label>
-							<input type="number" name="th_terbit" id="th_terbit" class="form-control" placeholder="Tahun Terbit">
+							<input type='tel' class="form-control" name="th_terbit" value="<?php echo $data_cek['th_terbit']; ?>" />
 						</div>
 
-						<div class="form-group">
-							<label>Stok</label>
-							<input type="number" name="stok" id="stok" class="form-control" placeholder="Jumlah Buku" value="1" min="1">
-						</div>
 
 					</div>
 					<!-- /.box-body -->
@@ -88,6 +73,7 @@ if (isset ($_POST['Ubah'])){
     //mulai proses ubah
     $sql_ubah = "UPDATE tb_buku SET
         judul_buku='".$_POST['judul_buku']."',
+		jenis_buku='".$_POST['jenis_buku']."',
         pengarang='".$_POST['pengarang']."',
         penerbit='".$_POST['penerbit']."',
         th_terbit='".$_POST['th_terbit']."'

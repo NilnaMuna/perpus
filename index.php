@@ -20,8 +20,7 @@ include "inc/koneksi.php";
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>SI PERPUSTAKAAN</title>
-	<link rel="icon" href="dist/img/logo.png">
+	<title>PERPUSTAKAAN</title>
 	<!-- Tell the browser to be responsive to screen width -->
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 	<!-- Bootstrap 3.3.6 -->
@@ -51,7 +50,6 @@ include "inc/koneksi.php";
 			<!-- Logo -->
 			<a href="index.php" class="logo">
 				<span class="logo-lg">
-					<img src="dist/img/logo.png" width="37px">
 					<b>E-Library</b>
 				</span>
 			</a>
@@ -72,7 +70,7 @@ include "inc/koneksi.php";
 							<a class="dropdown-toggle">
 								<span>
 									<b>
-										Sistem Informasi Manajemen Perpustakaan
+										Sistem Informasi Manajemen Perpustakaan Nurul Huda
 									</b>
 								</span>
 							</a>
@@ -107,7 +105,7 @@ include "inc/koneksi.php";
 				<!-- /.search form -->
 				<!-- sidebar menu: : style can be found in sidebar.less -->
 				<ul class="sidebar-menu">
-					<li class="header">MAIN NAVIGATION</li>
+					<li class="header">MENU UTAMA</li>
 
 					<!-- Level  -->
 					<?php
@@ -132,14 +130,14 @@ include "inc/koneksi.php";
 								</span>
 							</a>
 							<ul class="treeview-menu">
+								<li>
+									<a href="?page=MyApp/data_agt">
+										<i class="fa fa-users"></i>Data Anggota</a>
+								</li>
 
 								<li>
 									<a href="?page=MyApp/data_buku">
 										<i class="fa fa-book"></i>Data Buku</a>
-								</li>
-								<li>
-									<a href="?page=MyApp/data_agt">
-										<i class="fa fa-users"></i>Data Anggota</a>
 								</li>
 							</ul>
 						</li>
@@ -194,7 +192,7 @@ include "inc/koneksi.php";
 
 
 
-						<li class="header">SETTING</li>
+						<li class="header">PENGATURAN</li>
 
 						<li class="treeview">
 							<a href="?page=MyApp/data_pengguna">

@@ -6,7 +6,6 @@
 		<li>
 			<a href="index.php">
 				<i class="fa fa-home"></i>
-				<b>Si Perpustakaan</b>
 			</a>
 		</li>
 	</ol>
